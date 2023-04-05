@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MVCTraining.Models.DemoModels.StudentModel>
+
+
+<h2><center>My First View Page</center></h2>
+
+<div class="container">
+    <table border="1px solid black">
+        <thead><tr><td>ID</td><td>NAME</td></tr></thead>
+        <tbody>
+            @foreach (var studItem in Model)
+            {
+                <tr><td>@studItem.Id</td><td>@studItem.Name</td></tr>
+            }
+        </tbody>
+    </table>
+</div>
